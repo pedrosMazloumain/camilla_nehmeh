@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>
+		Camilla Nehmeh | CV
+	</title>
+    <link rel="stylesheet" type="text/css" href="CV.css">
+
+</head>
+<body>
+    <div class="center_logo"><a href="index.html"><img src="Gold Luxury Initial Circle Logo_preview_rev_1.png" alt="" style="box-shadow: 10px 10px 5px #aaaaaa;
+      border-radius: 50%;"></a>
+      </div>
+    <br>
+    <br>
+      <div class="try" style="display: flex; justify-content: center;"><button class="button-54" role="button">Curriculum Vitae</button></div>
+    <br>
+    <br>
+<div class="container">
+  <!-- <div class="mySlides">
+    <div class="numbertext">1 / 11</div>
+    <img src="pic-1.png" style="width:100%">
+  </div> -->
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 2</div>
+    <img src="CV (1).png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 2</div>
+    <img src="CV (2).png" style="width:100%">
+  </div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <!-- <div class="column">
+      <img class="demo cursor" src="pic-1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div> -->
+    <div class="column">
+      <img class="demo cursor" src="CV (1).png" style="width:100%" onclick="currentSlide(2)" alt="Basic information">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="CV (2).png" style="width:100%" onclick="currentSlide(3)" alt="Skills and experience">
+    </div>
+  </div>
+</div>
+
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+            
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>
+		Camilla Nehmeh | Collection
+	</title>
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+
+</head>
+<body>
+    <div class="center_logo"><a href="index.html"><img src="Gold Luxury Initial Circle Logo_preview_rev_1.png" alt="" style="box-shadow: 10px 10px 5px #aaaaaa;
+      border-radius: 50%;"></a>
+      </div>
+    <br>
+    <br>
+    <div class="try" style="display: flex; justify-content: center;"><button class="button-54" role="button">Collection</button></div>
+    <br>
+    <br>
+<div class="container">
+  <!-- <div class="mySlides">
+    <div class="numbertext">1 / 11</div>
+    <img src="pic-1.png" style="width:100%">
+  </div> -->
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 11</div>
+    <img src="pic-2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 11</div>
+    <img src="pic-3.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 11</div>
+    <img src="pic-4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 11</div>
+    <img src="pic-5.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 11</div>
+    <img src="pic-6.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 11</div>
+    <img src="collection- (6).jpeg" style="width:100%">
+  </div>
+
+  <!-- <div class="mySlides">
+    <div class="numbertext">8 / 11</div>
+    <img src="pic-8.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 11</div>
+    <img src="pic-9.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 11</div>
+    <img src="pic-10.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 11</div>
+    <img src="pic-11.png" style="width:100%">
+  </div> -->
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <!-- <div class="column">
+      <img class="demo cursor" src="pic-1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div> -->
+    <div class="column">
+      <img class="demo cursor" src="pic-2.png" style="width:100%" onclick="currentSlide(2)" alt="Inspired by the queen of Madagascar">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic-3.png" style="width:100%" onclick="currentSlide(3)" alt="DIOR capsule">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic-4.png" style="width:100%" onclick="currentSlide(4)" alt="Inspired by the sweet world of candies">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic-5.png" style="width:100%" onclick="currentSlide(5)" alt="Inspired by the Byzantine style">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="pic-6.png" style="width:100%" onclick="currentSlide(6)" alt="Inspired by the Greek mythology">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="collection- (6).jpeg" style="width:100%" onclick="currentSlide(7)" alt="Inspired by the Abstract art">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="pic-8.png" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic-9.png" style="width:100%" onclick="currentSlide(9)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic-10.png" style="width:100%" onclick="currentSlide(10)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic-11.png" style="width:100%" onclick="currentSlide(11)" alt="Snowy Mountains">
+    </div> -->
+  </div>
+</div>
+
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+            
+</body>
+</html>

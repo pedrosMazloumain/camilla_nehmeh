@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Euclid Circular A", "Poppins";
+  }
+  
+  body {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='244' height='244' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%239E9E9E' stroke-width='1.1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23BEBEBE'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+      
+    /* background: #16222a; 
+    background: -webkit-linear-gradient(
+      to right,
+      #3a6073,
+      #16222a
+    );
+    background: linear-gradient(
+      to right,
+      #3a6073,
+      #16222a
+    );  */
+    }
+
+    .center_logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 50px;
+    min-height: 85vh;
+    max-width: 96vw;
+    margin: 0 auto;
+  }
+  
+  section a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #020202;
+    font-weight: 500;
+    background: #ffffffb5;
+    border-radius: 2.125rem;
+    margin: 0 auto;
+    padding: 6px 26px;
+    font-size: 0.9rem;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .swiper {
+    width: 100%;
+  }
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  
+  .swiper-pagination {
+    bottom: 34px !important;
+    transform: scale(1.3);
+  }
+  
+  .swiper-slide {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 0 0 80px;
+    filter: grayscale(0.6);
+  }
+  
+  .swiper-slide h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .swiper-slide a:hover {
+    color: #005baa;
+  }
+  
+  .swiper-slide div {
+    transition: 0.25s;
+    opacity: 0;
+  }
+  
+  .swiper-slide-active div {
+    opacity: 1;                     
+  }
+  
+  .swiper-slide--one {
+    background: linear-gradient(to top, #4b4d4ebf, #203a4300, #d2d5d700),
+      url("dress-\ \(1\)_preview_rev_1.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  
+  .swiper-slide--two {
+    background: linear-gradient(to top, #4b4d4ebf, #203a4300, #d2d5d700),
+      url("dress-\ \(2\)_preview_rev_1.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  
+  .swiper-slide--three {
+    background: linear-gradient(to top, #4b4d4ebf, #203a4300, #d2d5d700),
+      url("dress-\(3\)_preview_rev_1.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  
+  .swiper-slide--four {
+    background: linear-gradient(to top, #4b4d4ebf, #203a4300, #d2d5d700),
+      url("dress-4_preview_rev_1.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  
+  .swiper-slide--five {
+    background: linear-gradient(to top, #4b4d4ebf, #203a4300, #d2d5d700),
+      url("dress-5_preview_rev_1.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  .swiper-slide--six {
+    background: linear-gradient(to top, #4b4d4ebf, #203a4300, #d2d5d700),
+      url("dress-\ \(6\)_preview_rev_1.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  .swiper-slide--seven {
+    background: linear-gradient(to top, #4b4d4ebf, #203a4300, #d2d5d700),
+      url("dress-\ \(7\)_preview_rev_1.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  /* .swiper-slide--eight {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+      url("pic-8.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  .swiper-slide--nine {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+      url("pic-9.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  .swiper-slide--ten {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+      url("pic-10.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  }
+  .swiper-slide--eleven {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+      url("pic-11.png") no-repeat 50% 50% / cover;
+      border-radius: 50%;
+  } */
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }
+
+  /* button CSS*/
+
+  .button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #888787;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: transparent;
+  }
+  
+  .button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-54 {
+      padding: 0.25em 0.75em;
+    }
+  }
